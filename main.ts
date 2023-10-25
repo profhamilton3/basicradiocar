@@ -6,7 +6,6 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (1 == receivedNumber) {
         wuKong.setAllMotor(100, 100)
         wuKong.mecanumRun(wuKong.RunList.Front, 100)
-        music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Prelude), music.PlaybackMode.InBackground)
         basic.showIcon(IconNames.Asleep)
     } else if (2 == receivedNumber) {
         wuKong.setAllMotor(-50, 75)
